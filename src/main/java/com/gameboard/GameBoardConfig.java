@@ -1,12 +1,13 @@
-package com.example;
+package com.gameboard;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup(GameBoardConfig.GROUP)
+public interface GameBoardConfig extends Config
 {
+	String GROUP = "gameboard";
 	@ConfigItem(
 		keyName = "greeting",
 		name = "Welcome Greeting",
